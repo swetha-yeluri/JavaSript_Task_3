@@ -1,0 +1,170 @@
+// =======================================
+// JavaScript Practice Tasks
+// Strings, Type Conversion, Flow Control & Loops
+// =======================================
+
+
+// ===============================
+// SECTION 1 – String & Type Conversion
+// ===============================
+
+// TASK 1 – Full Name Builder
+console.log("----- TASK 1 -----");
+
+let firstName = "Naveen";
+let lastName = "Kumar";
+
+// 1. Using +
+let fullName1 = firstName + " " + lastName;
+console.log("Using + :", fullName1);
+
+// 2. Using template string
+let fullName2 = `${firstName} ${lastName}`;
+console.log("Using Template Literal :", fullName2);
+
+// 3. Length of full name
+console.log("Length of Full Name :", fullName2.length);
+
+
+// TASK 2 – Predict Type
+console.log("\n----- TASK 2 -----");
+
+console.log(typeof("5" + 2));
+console.log(typeof(5 + "2"));
+console.log(typeof(true + 1));
+console.log(typeof(false + "hello"));
+console.log(typeof(null + 1));
+
+
+// TASK 3 – Manual Type Conversion
+console.log("\n----- TASK 3 -----");
+
+console.log(Number("100"));
+console.log(Number("10.5"));
+console.log(Number("abc"));
+console.log(Number(true));
+console.log(Number(false));
+console.log(Number(null));
+console.log(Number(undefined));
+
+
+// TASK 4 – Boolean Truthy/Falsy Test
+console.log("\n----- TASK 4 -----");
+
+console.log(Boolean(0));
+console.log(Boolean(1));
+console.log(Boolean(""));
+console.log(Boolean("hello"));
+console.log(Boolean(null));
+console.log(Boolean(undefined));
+console.log(Boolean([]));
+console.log(Boolean({}));
+
+
+// ===============================
+// SECTION 2 – Flow Control
+// ===============================
+
+// TASK 5 – Even or Odd
+console.log("\n----- TASK 5 -----");
+
+let num = 7;
+
+if (num % 2 === 0) {
+    console.log(num + " is Even");
+} else {
+    console.log(num + " is Odd");
+}
+
+
+// TASK 6 – Grade System
+console.log("\n----- TASK 6 -----");
+
+let marks = 75;
+
+if (marks >= 90) {
+    console.log("Grade: A");
+} else if (marks >= 75) {
+    console.log("Grade: B");
+} else if (marks >= 50) {
+    console.log("Grade: C");
+} else {
+    console.log("Fail");
+}
+
+
+// TASK 7 – Switch Day Finder
+console.log("\n----- TASK 7 -----");
+
+let dayNumber = 3;
+
+switch (dayNumber) {
+    case 1:
+        console.log("Monday");
+        break;
+    case 2:
+        console.log("Tuesday");
+        break;
+    case 3:
+        console.log("Wednesday");
+        break;
+    case 4:
+        console.log("Thursday");
+        break;
+    case 5:
+        console.log("Friday");
+        break;
+    case 6:
+        console.log("Saturday");
+        break;
+    case 7:
+        console.log("Sunday");
+        break;
+    default:
+        console.log("Invalid day number");
+}
+
+
+// ===============================
+// SECTION 3 – Loop Tasks
+// ===============================
+
+// TASK 8 – Reverse Counting
+console.log("\n----- TASK 8 -----");
+
+for (let i = 5; i >= 1; i--) {
+    console.log(i);
+}
+
+
+// TASK 9 – Multiplication Table
+console.log("\n----- TASK 9 -----");
+
+for (let i = 1; i <= 10; i++) {
+    console.log(`3 x ${i} = ${3 * i}`);
+}
+
+
+// TASK 10 – Sum of First 10 Numbers
+console.log("\n----- TASK 10 -----");
+
+let sum = 0;
+
+for (let i = 1; i <= 10; i++) {
+    sum += i;
+}
+
+console.log("Final Sum:", sum);
+
+
+// ===============================
+// BONUS – Mentor Level
+// ===============================
+
+console.log("\n----- BONUS -----");
+
+if ("0") {
+    console.log("true block");
+} else {
+    console.log("false block");
+}
